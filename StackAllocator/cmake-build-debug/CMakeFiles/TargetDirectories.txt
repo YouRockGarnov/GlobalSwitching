@@ -1,0 +1,3 @@
+C:/Users/Yury/Desktop/mipt/StackAllocator/cmake-build-debug/CMakeFiles/StackAlloc.dir
+C:/Users/Yury/Desktop/mipt/StackAllocator/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Yury/Desktop/mipt/StackAllocator/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Yury/Desktop/mipt/StackAllocator/headers/BufferChain.h
+memory
+-
+list
+-
+
+C:/Users/Yury/Desktop/mipt/StackAllocator/headers/StackAlloc.h
+BufferChain.h
+C:/Users/Yury/Desktop/mipt/StackAllocator/headers/BufferChain.h
+
+C:/Users/Yury/Desktop/mipt/StackAllocator/main.cpp
+iostream
+-
+list
+-
+vector
+-
+headers/StackAlloc.h
+C:/Users/Yury/Desktop/mipt/StackAllocator/headers/StackAlloc.h
+
