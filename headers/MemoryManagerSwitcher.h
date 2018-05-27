@@ -10,7 +10,13 @@ public:
 	MemoryManagerSwitcher() : recManager(new(malloc(sizeof(StdMemoryManager))) StdMemoryManager()) {};
 	MemoryManagerSwitcher(const MemoryManagerSwitcher&) = delete;
 	MemoryManagerSwitcher&  operator=(const MemoryManagerSwitcher&) = delete;
-	~MemoryManagerSwitcher() {};
+	~MemoryManagerSwitcher() {
+		while (recManager != nullptr) {
+			IMemoryManager* prev = recManager->prev;
+			delete recManager;
+			recManager = prev;
+		}
+	};
 
 	void pushManager(IMemoryManager*);
 	void popManager();
